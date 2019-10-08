@@ -43,7 +43,7 @@ The tool gets the sample name from the filename, it has to be the same sample na
 
     $ gzip *.vcf
 
-5.  Run script on indicidual components
+5.  Run script on individual components
 
 ```
 $ for chrom in $(cat $chromosomes); do echo $chrom running; python ${path}/bin/vcf_compare.py NA12878.truth.${chrom}.g.vcf.gz NA12878.dev.${chrom}.g.vcf.gz > NA12878.${chrom}.comparison.txt ; done
