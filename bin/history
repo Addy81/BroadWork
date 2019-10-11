@@ -1,0 +1,500 @@
+   27  gzip *vcf
+   28  cd ../truth/
+   29  gzip *vcf
+   30  cd ../
+   31  ls
+   32  cd ../
+   33  cd ../
+   34  cd data/wgs/
+   35  ls
+   36  cd test/
+   37  ls
+   38  gzip NA12878.huge-ubam.g.vcf 
+   39  rm NA12878.huge-ubam.g.vcf 
+   40  ls
+   41  gsutil cp gs://broad-dsde-methods-gauthier/testCompare_forAdriana/wgs/test/NA12878.huge-ubam.g.vcf.gz 
+   42  gsutil cp gs://broad-dsde-methods-gauthier/testCompare_forAdriana/wgs/test/NA12878.huge-ubam.g.vcf.gz .
+   43  lpwd
+   44  pwd
+   45  ls
+   46  cd ../truth/
+   47  ls
+   48  rm *
+   49  ls
+   50  gsutil cp gs://broad-dsde-methods-gauthier/testCompare_forAdriana/wgs/truth/*.vcf.gz .
+   51  gsutil cp gs://broad-dsde-methods-gauthier/testCompare_forAdriana/wgs/truth/*.vcf.gz .
+   52  cd ../../
+   53  ls
+   54  cd ../results/
+   55  ls
+   56  python ../bin/vcf_compare.py ../data/wgs/truth/CHMI_CHMI3_WGS2.f6c39eb5-0716-4f02-9be8-47b343c5830e.g.vcf.gz ../data/wgs/test/CHMI_CHMI3_WGS2.f6c39eb5-0716-4f02-9be8-47b343c5830e.g.vcf.gz > CHMI_CHMI3_WGS2.comparison.txt
+   57  bg
+   58  jobs
+   59  jobs
+   60  tail CHMI_CHMI3_WGS2.comparison.txt 
+   61  zgrep
+   62  zgrep 49711932 ../data/wgs/test/CHMI_CHMI3_WGS2.f6c39eb5-0716-4f02-9be8-47b343c5830e.g.vcf.gz 
+   63  zgrep 49711932 ../data/wgs/truth/CHMI_CHMI3_WGS2.f6c39eb5-0716-4f02-9be8-47b343c5830e.g.vcf.gz 
+   64  jobs
+   65  jobs
+   66  tail CHMI_CHMI3_WGS2.comparison.txt 
+   67  tail CHMI_CHMI3_WGS2.comparison.txt 
+   68  tail CHMI_CHMI3_WGS2.comparison.txt 
+   69  jobs
+   70  tail CHMI_CHMI3_WGS2.comparison.txt 
+   71  tail CHMI_CHMI3_WGS2.comparison.txt 
+   72  jobs
+   73  ls -l
+   74  ls -l
+   75  jobs
+   76  kill %1
+   77  jobs
+   78  ps -ax
+   79  tail CHMI_CHMI3_WGS2.comparison.txt 
+   80  zgrep -w 49711932 ../data/wgs/test/CHMI_CHMI3_WGS2.f6c39eb5-0716-4f02-9be8-47b343c5830e.g.vcf.gz 
+   81  zgrep -w 49711932 ../data/wgs/truth/CHMI_CHMI3_WGS2.f6c39eb5-0716-4f02-9be8-47b343c5830e.g.vcf.gz 
+   82  python ../bin/vcf_compare.py ../data/wgs/truth/CHMI_CHMI3_WGS2.f6c39eb5-0716-4f02-9be8-47b343c5830e.g.vcf.gz ../data/wgs/test/CHMI_CHMI3_WGS2.f6c39eb5-0716-4f02-9be8-47b343c5830e.g.vcf.gz > CHMI_CHMI3_WGS2.comparison2.txt &
+   83  jobs
+   84  ls
+   85  ls -l
+   86  ls -l
+   87  ls -l
+   88  ls -l
+   89  ls -l
+   90  less CHMI_CHMI3_WGS2.comparison2.txt 
+   91  tail CHMI_CHMI3_WGS2.comparison2.txt 
+   92  tail CHMI_CHMI3_WGS2.comparison2.txt 
+   93  ls -l
+   94  ls -l
+   95  ls -l
+   96  ls -l
+   97  tail CHMI_CHMI3_WGS2.comparison2.txt 
+   98  kill %1
+   99  python ../bin/vcf_compare.py ../data/wgs/truth/CHMI_CHMI3_WGS2.f6c39eb5-0716-4f02-9be8-47b343c5830e.g.vcf.gz ../data/wgs/test/CHMI_CHMI3_WGS2.f6c39eb5-0716-4f02-9be8-47b343c5830e.g.vcf.gz
+  100  python ../bin/vcf_compare.py ../data/wgs/truth/CHMI_CHMI3_WGS2.f6c39eb5-0716-4f02-9be8-47b343c5830e.g.vcf.gz ../data/wgs/test/CHMI_CHMI3_WGS2.f6c39eb5-0716-4f02-9be8-47b343c5830e.g.vcf.gz > CHMI_CHMI3_WGS2.comparison2.txt &
+  101  jobs
+  102  ls -l
+  103  tail CHMI_CHMI3_WGS2.comparison2.txt 
+  104  kill %1
+  105  python ../bin/vcf_compare.py ../data/wgs/truth/CHMI_CHMI3_WGS2.f6c39eb5-0716-4f02-9be8-47b343c5830e.g.vcf.gz ../data/wgs/test/CHMI_CHMI3_WGS2.f6c39eb5-0716-4f02-9be8-47b343c5830e.g.vcf.gz > CHMI_CHMI3_WGS2.comparison2.txt
+  106  cd bin/
+  107  python vcf_compare_progress.py ../data/NA12891.truth_short.vcf.gz ../data/NA12891.dev_short.vcf.gz 
+  108  python vcf_compare_progress.py ../data/NA12891.truth_short.vcf.gz ../data/NA12891.dev_short.vcf.gz 
+  109  python vcf_compare_progress.py ../data/NA12891.truth_short.vcf.gz ../data/NA12891.dev_short.vcf.gz 
+  110  python vcf_compare_progress.py ../data/NA12891.truth_short.vcf.gz ../data/NA12891.dev_short.vcf.gz 
+  111  python vcf_compare_progress.py ../data/NA12891.truth_short.vcf.gz ../data/NA12891.dev_short.vcf.gz 
+  112  python vcf_compare.py ../data/NA12891.truth_short.vcf.gz ../data/NA12891.dev_short.vcf.gz 
+  113  python vcf_compare_progress.py ../data/NA12891.truth_short.vcf.gz ../data/NA12891.dev_short.vcf.gz 
+  114  git add *
+  115  git commit -m 'script now accepts compressed vcfs'
+  116  git push
+  117  git status
+  118  touch CNNtasks.wdl
+  119  LS
+  120  ls -l
+  121  less CHMI_CHMI3_WGS2.comparison2.txt 
+  122  less CHMI_CHMI3_WGS2.comparison.txt 
+  123  tail CHMI_CHMI3_WGS2.comparison.txt
+  124  ls -l
+  125  ls -l
+  126  tail CHMI_CHMI3_WGS2.comparison
+  127  tail CHMI_CHMI3_WGS2.comparison2.txt 
+  128  ps -ac
+  129  ps -ax
+  130  tail CHMI_CHMI3_WGS2.comparison2.txt 
+  131  conda install -c bioconda -c conda-forge snakemake
+  132  cd ../data/
+  133  ls
+  134  cd wgs/
+  135  ls
+  136  cd truth/
+  137  ls -lrtah
+  138  cd ../test/
+  139  ls
+  140  ls
+  141  ls
+  142  ls
+  143  ls
+  144  ls -lrtah
+  145  c
+  146  cd
+  147  cd Projects/testCompare/
+  148  ls
+  149  cd bin/
+  150  ls
+  151  cd ../results/
+  152  ls
+  153  ls ../data/wgs/test/
+  154  ls
+  155  rm NA12878_wgs_test.chr*
+  156  ls
+  157  ls
+  158  cd ../../../
+  159  ls
+  160  cd wgs/truth/
+  161  ls
+  162  cd NA12878
+  163  ls
+  164  rm NA12878.huge-ubam_WGS_chr*
+  165  ls
+  166  cd
+  167  cd Projects/testCompare/results/
+  168  ls
+  169  cd WGS/
+  170  ls
+  171  mkdir CHMI_CHMI3_WGS2
+  172  mv CHMI_CHMI3_WGS2.* CHMI_CHMI3_WGS2
+  173  ls
+  174  mkdir NA12891
+  175  cd
+  176  cd -
+  177  cd NA12891/
+  178  A set of tools written in Perl and C++ for working with VCF files.
+  179  ls
+  180  cd Projects/
+  181  ls
+  182  cd testCompare/
+  183  ls
+  184  cd data/
+  185  ls
+  186  cd wgs/
+  187  ls
+  188  cd test/
+  189  ls
+  190  cd NA12892/
+  191  ls
+  192  gzip *.g.vcf
+  193  ls
+  194  cd ../
+  195  ls
+  196  cd ../
+  197  cd truth/NA12892
+  198  ls
+  199  tabix -p vcf NA12892.f175671b-f657-4077-9856-732c96b586ad.g.vcf.gz 
+  200  path=/Users/atoutoud/Projects/testCompare/data/wgs/
+  201  echo path
+  202  echo $path
+  203  echo /Users/atoutoud/Projects/testCompare/data/wgs/truth/NA128
+  204  ls
+  205  for chrom in $(cat /Users/atoutoud/Projects/testCompare/data/chromosomes.txt); tabix -h NA12892.f175671b-f657-4077-9856-732c96b586ad.g.vcf.gz ${chrom} > NA12892.wgs.${chrom}.g.vcf
+  206  for chrom in $(cat /Users/atoutoud/Projects/testCompare/data/chromosomes.txt); do tabix -h NA12892.f175671b-f657-4077-9856-732c96b586ad.g.vcf.gz ${chrom} > NA12892.wgs.${chrom}.g.vcf;done
+  207  ls
+  208  gzip *.g.vcf
+  209  top
+  210  ls
+  211  pwd
+  212  ls ../../test/NA12892/
+  213  chromosomes=/Users/atoutoud/Projects/testCompare/data/chromosomes.txt
+  214  echo $chromosomes
+  215  path=/Users/atoutoud/Projects/testCompare
+  216  for chrom in $(cat ${chromosomes});do echo "python ${path}/bin/vcf_compare.py ${path}/data/wgs/truth/NA12892/NA12892.wgs.${chrom}.g.vcf.gz ${path}/data/wgs/test/NA12892/NA12892.wgs.${chrom}.g.vcf.gz > NA12891.wgs.${chrom}.comparison.txt";done
+  217  top
+  218  cd
+  219  cd $path
+  220  ls
+  221  cd data/
+  222  gsutil cp gs://broad-dsde-methods-exome-positive-controls/D5227/NexPond-359781/v1/NexPond-359781.bam 
+  223  gsutil cp gs://broad-dsde-methods-exome-positive-controls/D5227/NexPond-359781/v1/NexPond-359781.bam .
+  224  top
+  225  echo $chromosomes
+  226  echo $path
+  227  ls
+  228  cd wgs/
+  229  ls
+  230  cd test/
+  231  ls
+  232  cd NA12878/
+  233  ls
+  234  ls ../../truth/NA12878/
+  235  for chrom in $(cat chromosomes); do mv NA12878.2b3dcfd9_wgs_test.${chrom}.g.vcf.gzNA12878.2b3dcfd9_wgs_truth.${chrom}.g.vcf.gz;done 
+  236  for chrom in $(cat $chromosomes); do mv NA12878.2b3dcfd9_wgs_test.${chrom}.g.vcf.gzNA12878.2b3dcfd9_wgs_truth.${chrom}.g.vcf.gz;done 
+  237  for chrom in $(cat $chromosomes); do mv NA12878.2b3dcfd9_wgs_test.${chrom}.g.vcf.gz NA12878.2b3dcfd9_wgs_truth.${chrom}.g.vcf.gz; done 
+  238  ls
+  239  ls ../../truth/NA12878/
+  240  pwd
+  241  for chrom in $(cat $chromosomes); do mv NA12878.2b3dcfd9_wgs_truth.${chrom}.g.vcf.gz NA12878.2b3dcfd9_wgs_test.${chrom}.g.vcf.gz; done 
+  242  cd ../../truth/
+  243  ls
+  244  cd NA12878/
+  245  ls
+  246  for chrom in $(cat $chromosomes); do mv NA12878.2b3dcfd9_WGS_test.${chrom}.g.vcf.gz NA12878.2b3dcfd9_WGS_truth.${chrom}.g.vcf.gz; done 
+  247  for chrom in $(cat $chromosomes); do mv NA12878_2b3dcfd9_WGS_test.${chrom}.g.vcf.gz NA12878_2b3dcfd9_WGS_truth.${chrom}.g.vcf.gz; done 
+  248  ls
+  249  cd ../../
+  250  ls
+  251  cd ../
+  252  ls
+  253  cd ../
+  254  cd results/
+  255  ls
+  256  cd WGS/
+  257  ls
+  258  mkdir NA128978
+  259  for chrom in $(cat ${chromosomes});do python ${path}/bin/vcf_compare.py ${path}/data/wgs/truth/NA12878/NA12878_2b3dcfd9_WGS_truth.${chrom}.g.vcf.gz ${path}/data/wgs/test/NA12878/NA12878.2b3dcfd9_wgs_test.${chrom}.g.vcf.gz > NA12891.wgs.${chrom}.comparison.txt;done
+  260  pwd
+  261  cd /Users/atoutoud/Projects/testCompare/data/wgs/truth/NA12878
+  262  ls
+  263  for chrom in $(cat $chromosomes); do mv NA12878.2b3dcfd9_WGS_truth.${chrom}.g.vcf.gz NA12878.2b3dcfd9_WGS_truth.${chrom}.g.vcf; done 
+  264  for chrom in $(cat $chromosomes); do mv NA12878_2b3dcfd9_WGS_truth.${chrom}.g.vcf.gz NA12878.2b3dcfd9_WGS_truth.${chrom}.g.vcf; done 
+  265  cd ../../test/NA12878
+  266  less NA12878.2b3dcfd9_wgs_test.chr3.g.vcf.gz 
+  267  /Users/atoutoud/Projects/testCompare/results/WGS
+  268  cd /Users/atoutoud/Projects/testCompare/results/WGS
+  269  ls
+  270  mv NA128978 NA12878
+  271  cd NA12878/
+  272  ls
+  273  for chrom in $(cat ${chromosomes});do python ${path}/bin/vcf_compare.py ${path}/data/wgs/truth/NA12878/NA12878.2b3dcfd9_WGS_truth.${chrom}.g.vcf.gz ${path}/data/wgs/test/NA12878/NA12878.2b3dcfd9_wgs_test.${chrom}.g.vcf.gz > NA12891.wgs.${chrom}.comparison.txt;donemv
+  274  ls /Users/atoutoud/Projects/testCompare/data/wgs/truth/NA12878/
+  275  for chrom in $(cat ${chromosomes});do python ${path}/bin/vcf_compare.py ${path}/data/wgs/truth/NA12878/NA12878.2b3dcfd9_WGS_truth.${chrom}.g.vcf.gz ${path}/data/wgs/test/NA12878/NA12878.2b3dcfd9_wgs_test.${chrom}.g.vcf.gz > NA12891.wgs.${chrom}.comparison.txt;done
+  276  for chrom in $(cat ${chromosomes}); do echo $chrom; tail -n 2 NA12891.wgs.${chrom}.comparison.txt >> NA12891.wgs.full_comparison.txt;done
+  277  less NA12891.wgs.full_comparison.txt 
+  278  for chrom in $(cat $chromosomes); do mv NA12891.wgs.${chrom}.comparison.txt NA12878.wgs.${chrom}.comparison.txt; done
+  279  ls
+  280  mv NA12891.wgs.full_comparison.txt NA12878.wgs.full_comparison.txt 
+  281  zip NA12878.wgs.comparison.zip *.txt
+  282  gsutil cp NA12878.wgs.comparison.zip  gs://broad-dsde-methods-gauthier/testCompare_forAdriana/wgs/
+  283  gsutil ls  gs://broad-dsde-methods-gauthier/testCompare_forAdriana/wgs/
+  284  ls
+  285  cd $path
+  286  ls
+  287  cd data/wgs/test/NA12878
+  288  ls
+  289  cd ../../truth/NA12878/
+  290  ls
+  291  for chrom in $(cat $chromosomes);do mv NA12878_WGS_test.${chrom}.g.vcf.gz NA12878_WGS2_truth.${chrom}.g.vcf.gz; done
+  292  ls
+  293  less NA12878_WGS2_truth.chr1.g.vcf.gz 
+  294  for chrom in $(cat $chromosomes);do mv NA12878_WGS2_truth.${chrom}.g.vcf.gz NA12878_WGS2_truth.${chrom}.g.vcf; done
+  295  gzip *.vcf
+  296  ls
+  297  ls
+  298  for chrom in $(cat chromosomes); do mv NA12878_WGS2_truth.${chrom}.g.vcf.gz NA12878.WGS2_truth.${chrom}.g.vcf.gz;done
+  299  for chrom in $(cat $chromosomes); do mv NA12878_WGS2_truth.${chrom}.g.vcf.gz NA12878.WGS2_truth.${chrom}.g.vcf.gz;done
+  300  ls
+  301  cd ../../
+  302  cd test
+  303  ls
+  304  cd NA12878/
+  305  for chrom in $(cat $chromosomes); do mv NA12878_WGS2_test.${chrom}.g.vcf.gz NA12878.WGS2_test.${chrom}.g.vcf.gz;done
+  306  ls
+  307  ls
+  308  for chrom in $(cat $chromomsomes;
+  309  for chrom in $(cat $chromomsomes); do echo ${chrom} splitting; tabix -h NA12878.huge-ubam.g.vcf.gz > NA12878.huge-ubam.test.${chrom}.g.vcf; done
+  310  ls
+  311  for chrom in $(cat $chromomsomes); do echo ${chrom} splitting; tabix -h NA12878.huge-ubam.g.vcf.gz > NA12878.huge-ubam.test.${chrom}.g.vcf; done
+  312  for chrom in $(cat $chromomsomes); do echo ${chrom} splitting; tabix -h NA12878.huge-ubam.g.vcf.gz ${chrom} > NA12878.huge-ubam.test.${chrom}.g.vcf; done
+  313  for chrom in $(cat $chromomsomes); do tabix -h NA12878.huge-ubam.g.vcf.gz ${chrom} > NA12878.huge-ubam.test.${chrom}.g.vcf; done
+  314  for chrom in $(cat $chromosomes); do echo ${chrom} splitting; tabix -h NA12878.huge-ubam.g.vcf.gz > NA12878.huge-ubam.test.${chrom}.g.vcf; done
+  315  for chrom in $(cat $chromosomes); do echo ${chrom} splitting; tabix -h NA12878.huge-ubam.g.vcf.gz ${chrom} > NA12878.huge-ubam.test.${chrom}.g.vcf; done
+  316  gzip *.vcf
+  317  ls
+  318  cd /Users/atoutoud/Projects/testCompare/results/WGS/NA12878
+  319  ls
+  320  ls -lrtah
+  321  for chrom in $(cat $chromosomes); do echo $chrom running; python ${path}/bin/vcf_compare.py /Users/atoutoud/Projects/testCompare/data/wgs/truth/NA12878/NA12878.huge-ubam.truth.${chrom}.g.vcf.gz /Users/atoutoud/Projects/testCompare/data/wgs/test/NA12878/NA12878.huge-ubam.test.${chrom}.g.vcf.gz > NA12878.huge-ubam.${chrom}.comparison.txt ; done
+  322  la
+  323  la
+  324  ls
+  325  tail -n +1 NA12878.huge-ubam.chr11.comparison.txt 
+  326  tail -n 1 NA12878.huge-ubam.chr11.comparison.txt 
+  327  tail -n <1+1> NA12878.huge-ubam.chr11.comparison.txt 
+  328  tail -n 1+1  NA12878.huge-ubam.chr11.comparison.txt 
+  329  tail -n +<1+1> NA12878.huge-ubam.chr11.comparison.txt 
+  330  tail -n +1+! NA12878.huge-ubam.chr11.comparison.txt 
+  331  tail -n +1+1 NA12878.huge-ubam.chr11.comparison.txt 
+  332  tail -n +2 NA12878.huge-ubam.chr11.comparison.txt 
+  333  tail -n +3 NA12878.huge-ubam.chr11.comparison.txt 
+  334  tail -n +5 NA12878.huge-ubam.chr11.comparison.txt 
+  335  tail -n 2 NA12878.huge-ubam.chr11.comparison.txt | hear -n 1
+  336  tail -n 2 NA12878.huge-ubam.chr11.comparison.txt | head -n 1
+  337  for chrom in $(cat $chromosomes); do tail -n 2 NA12878.huge-ubam.${chrom}.comparison.txt | head -n 1 >> NA12878.huge-ubam.full_comparison.txt;done
+  338  less NA12878.huge-ubam.full_comparison.txt 
+  339  nano NA12878.huge-ubam.full_comparison.txt 
+  340  less NA12878.huge-ubam.full_comparison.txt 
+  341  less NA12878.huge-ubam.full_comparison.txt 
+  342  /usr/local/bin/python3
+  343  ax = sns.scatterplot(x="TSNE_1", y="TSNE_2",data=data,palette=sns.color_palette("hls", 10))
+  344  python bin/plot_tnse.py 
+  345  python bin/plot_tnse.py 
+  346  import numpy as np
+  347  import matplotlib.pyplot as plt
+  348  import pandas as pd
+  349  import seaborn as sns
+  350  with open('/Users/atoutoud/Projects/testCompare/tsne_components_NA12878.tsv','r') as coords:
+  351      samples = []
+  352      x = []
+  353      y = []
+  354      for line in coords:;         coordinates = line.split('\t')
+  355          samples.append(coordinates[0])
+  356          x.append(float(coordinates[1]))
+  357          y.append(float(coordinates[2].strip()))
+  358  data_dict = {'TSNE_1':x,'TSNE_2':y}
+  359  data = pd.DataFrame(data_dict, index=samples)
+  360  import numpy as np
+  361  import matplotlib.pyplot as plt
+  362  import pandas as pd
+  363  import seaborn as sns
+  364  with open('/Users/atoutoud/Projects/testCompare/tsne_components_NA12878.tsv','r') as coords:
+  365      samples = []
+  366      x = []
+  367      y = []
+  368      for line in coords:;         coordinates = line.split('\t')
+  369          samples.append(coordinates[0])
+  370          x.append(float(coordinates[1]))
+  371          y.append(float(coordinates[2].strip()))
+  372  data_dict = {'TSNE_1':x,'TSNE_2':y}
+  373  data = pd.DataFrame(data_dict, index=samples)
+  374  labels = kmeans.predict(data)
+  375  centroids = kmeans.cluster_centers_
+  376  python bin/plot_tnse.py 
+  377  jupyter notebook
+  378  bg
+  379  ipython
+  380  pip
+  381  python bin/plot_tnse.py 
+  382  python bin/plot_tnse.py 
+  383  python bin/plot_tnse.py 
+  384  python bin/plot_tnse.py 
+  385  python bin/plot_tnse.py 
+  386  python bin/plot_tnse.py 
+  387  python bin/plot_tnse.py 
+  388  python bin/plot_tnse.py 
+  389  python bin/plot_tnse.py 
+  390  python bin/plot_tnse.py 
+  391  python bin/plot_tnse.py 
+  392  python bin/plot_tnse.py 
+  393  python bin/plot_tnse.py 
+  394  python bin/plot_tnse.py 
+  395  python bin/plot_tnse.py 
+  396  python bin/plot_tnse.py 
+  397  python bin/plot_tnse.py 
+  398  python bin/plot_tnse.py 
+  399  python bin/plot_tnse.py 
+  400  python bin/plot_tnse.py 
+  401  python bin/plot_tnse.py 
+  402  python bin/plot_tnse.py 
+  403  pwd
+  404  /usr/local/bin/python3
+  405  cd ../
+  406  ls
+  407  python sort_Cluster2.py 
+  408  python sort_Cluster2.py 
+  409  python sort_Cluster2.py 
+  410  python sort_Cluster2.py 
+  411  gsutil ls gs://broad-dsde-methods-exome-positive-controls/D5227/v1/NexPond-429956.bam
+  412  gsutil ls gs://broad-dsde-methods-exome-positive-controls/D5227/v1/
+  413  gsutil ls gs://broad-dsde-methods-exome-positive-controls/D5227/
+  414  cd Projects/
+  415  ls
+  416  for sample in $(cat Clusters10samples ); do echo gs://broad-dsde-methods-exome-positive-controls/D5227/${sample}/v1/${sample}.bam; done
+  417  gsutil ls gs://broad-dsde-methods-exome-positive-controls/D5227/NexPond-429956/v1/NexPond-429956.bam
+  418  gsutil ls gs://broad-dsde-methods-exome-positive-controls/D5227/NexPond-429956/v1
+  419  gsutil ls gs://broad-dsde-methods-exome-positive-controls/D5227/NexPond-506282/v1/NexPond-506282.bam
+  420  gsutil ls gs://broad-dsde-methods-exome-positive-controls/D5227/NexPond-506282
+  421  gsutil cp gs://fc-7c2b0c73-0f1a-4851-8e96-6767345a25d0/d7a9645d-0be3-4e3d-b2ec-61d38fd426cd/Cram2FilteredVcf/da5ef980-d440-4a62-8abc-20e7c6187c03/call-FilterVariantTranches/C3-591049_5_cnn_filtered.vcf.gz .
+  422  gzip -d C3-591049_5_cnn_filtered.vcf.gz 
+  423  less C3-591049_5_cnn_filtered.vcf 
+  424  grep HaplotypeCaller C3-591049_5_cnn_filtered.vcf 
+  425  less C3-591049_5_cnn_filtered.vcf 
+  426  grep RunHC C3-591049_5_cnn_filtered.vcf 
+  427  cd 
+  428  cd Downloads/
+  429  ls
+  430  grep HaplotypeCaller d7a9645d-0be3-4e3d-b2ec-61d38fd426cd_Cram2FilteredVcf_da5ef980-d440-4a62-8abc-20e7c6187c03_call-RunHC4_shard-0_C3-591049_5_hc4.g.vcf 
+  431  grep RunHC d7a9645d-0be3-4e3d-b2ec-61d38fd426cd_Cram2FilteredVcf_da5ef980-d440-4a62-8abc-20e7c6187c03_call-RunHC4_shard-0_C3-591049_5_hc4.g.vcf 
+  432  grep CommandLine d7a9645d-0be3-4e3d-b2ec-61d38fd426cd_Cram2FilteredVcf_da5ef980-d440-4a62-8abc-20e7c6187c03_call-RunHC4_shard-0_C3-591049_5_hc4.g.vcf 
+  433  less d7a9645d-0be3-4e3d-b2ec-61d38fd426cd_Cram2FilteredVcf_da5ef980-d440-4a62-8abc-20e7c6187c03_call-RunHC4_shard-0_C3-591049_5_hc4.g.vcf 
+  434  gzip d7a9645d-0be3-4e3d-b2ec-61d38fd426cd_Cram2FilteredVcf_da5ef980-d440-4a62-8abc-20e7c6187c03_call-RunHC4_shard-0_C3-591049_5_hc4.g.vcf 
+  435  grep CommandLine d7a9645d-0be3-4e3d-b2ec-61d38fd426cd_Cram2FilteredVcf_da5ef980-d440-4a62-8abc-20e7c6187c03_call-RunHC4_shard-0_C3-591049_5_hc4.g.vcf 
+  436  ls
+  437  gsuitl cp gs://fc-7c2b0c73-0f1a-4851-8e96-6767345a25d0/d7a9645d-0be3-4e3d-b2ec-61d38fd426cd/Cram2FilteredVcf/da5ef980-d440-4a62-8abc-20e7c6187c03/call-RunHC4/shard-0/C3-591049_5_hc4.g.vcf.gz .
+  438  gsutil cp gs://fc-7c2b0c73-0f1a-4851-8e96-6767345a25d0/d7a9645d-0be3-4e3d-b2ec-61d38fd426cd/Cram2FilteredVcf/da5ef980-d440-4a62-8abc-20e7c6187c03/call-RunHC4/shard-0/C3-591049_5_hc4.g.vcf.gz .;2D
+  439  zcat C3-591049_5_hc4.g.vcf.gz 
+  440  ls
+  441  zgrep CommandLine C3-591049_5_hc4.g.vcf.gz 
+  442  gsutil ls gs://broad-dsde-methods-exome-positive-controls/D5227/NexPond-405686
+  443  gsutil ls gs://broad-dsde-methods-exome-positive-controls/D5227/NexPond-405686/v2
+  444  ls
+  445  cd Projects/
+  446  ls
+  447  cp Clusters10samples testCompare/
+  448  cp cluster2.tsv testCompare/
+  449  cp filtered_vcfs.tsv testCompare/
+  450  cp happy_hg37_NexPond-359781_cnn_filtered.vcf.gz.summary.csv testCompare/
+  451  cp happy_plots.R testCompare/bin/
+  452  rm metrics.png 
+  453  cp sort_Cluster2.py testCompare/
+  454  ls
+  455  ls
+  456  rm Clusters10samples 
+  457  rm cluster2.tsv 
+  458  rm filtered_vcfs.tsv 
+  459  rm happy_hg37_NexPond-359781_cnn_filtered.vcf.gz.summary.csv 
+  460  rm happy_plots.R 
+  461  ls
+  462  cp happy_hg37_NexPond-359781_2_cnn_filtered.vcf.gz.summary.csv testCompare/
+  463  cp hg37_NexPond-359781_2_cnn_filtered.vcf.gz testCompare/
+  464  rm sort_Cluster2.py 
+  465  cd testCompare/
+  466  ls
+  467  cd data/
+  468  ls
+  469  mkdir archive
+  470  cd ../
+  471  ls
+  472  mv hg37_NexPond-359781_
+  473  mv hg37_NexPond-359781_* data/archive/
+  474  ls
+  475  mv happy_plot.R ../bin
+  476  mkdir random
+  477  cd filtered_vcfs.tsv 
+  478  cd random/
+  479  ls
+  480  gsutil cp  gs://fc-7c2b0c73-0f1a-4851-8e96-6767345a25d0/9928f59d-5329-4c9d-a4ab-10b5d4009825/Cram2FilteredVcf/59c045c3-885d-4c7c-956d-7b8ef63db375/call-FilterVariantTranches/C3-591049_2_cnn_filtered.vcf.gz .
+  481  gsutil cp gs://fc-7c2b0c73-0f1a-4851-8e96-6767345a25d0/56b274eb-94b1-4cbc-abff-3b21b78a80e7/Cram2FilteredVcf/840931f2-a088-4256-8c9f-119f3bfe412e/call-FilterVariantTranches/attempt-2/C3-591049_5_cnn_filtered.vcf.gz .
+  482  ls
+  483  cd ../../
+  484  ls
+  485  cd bin 
+  486  cd -
+  487  python ../bin/vcf_compare.py ../random/C3-591049_2_cnn_filtered.vcf.gz ../random/C3-591049_5_cnn_filtered.vcf.gz 
+  488  zgrep 591049 ../random/C3-591049_5_cnn_filtered.vcf.gz 
+  489  zcat ../random/C3-591049_5_cnn_filtered.vcf.gz 
+  490  zcat
+  491  zcat ../random/C3-591049_5_cnn_filtered.vcf.gz 
+  492  zcat ../random/C3-591049_5_cnn_filtered.vcf.gz
+  493  zgrep # C3-591049_5_cnn_filtered.vcf.gz 
+  494  zgrep '#' C3-591049_5_cnn_filtered.vcf.gz 
+  495  python ../bin/vcf_compare.py ../random/C3-591049_2_cnn_filtered.vcf.gz ../random/C3-591049_5_cnn_filtered.vcf.gz NA12878
+  496  python ../bin/vcf_compare.py ../random/C3-591049_2_cnn_filtered.vcf.gz ../random/C3-591049_5_cnn_filtered.vcf.gz NA12878
+  497  python ../bin/vcf_compare.py ../random/C3-591049_2_cnn_filtered.vcf.gz ../random/C3-591049_5_cnn_filtered.vcf.gz NA12878 > C3-591049_random2-5_comparison.txt
+  498  less C3-591049_random2-5_comparison.txt 
+  499  tail C3-591049_random2-5_comparison.txt 
+  500  less C3-591049_random2-5_comparison.txt 
+  501  cd Do
+  502  cd Downloads/
+  503  ls
+  504  ls -ll
+  505  ls -lrtah
+  506  mv 1D-CNN_GVCF.5.wdl ../Projects/BroadWork/bin/
+  507  ls
+  508  cd ../Bro
+  509  cd
+  510  ls
+  511  cd Projects/
+  512  ls
+  513  cd BroadWork/
+  514  ls
+  515  cd bin/
+  516  ls
+  517  git add 1D-CNN_GVCF.5.wdl 
+  518  git commit -m 'added filtering wdl'
+  519  git push
+  520  sudo add-apt-repository ppa:openjdk-r/ppa && sudo apt-get update -q && sudo apt install -y openjdk-11-jdk
+  521  cp ~/Downloads/2.hap.py-analysis.* .
+  522  git add 2.hap.py-analysis.*
+  523  git commit -m 'added main analysis notebook'
+  524  git push
+  525  history
+  526  history > history
